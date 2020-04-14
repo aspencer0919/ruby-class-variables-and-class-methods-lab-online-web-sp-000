@@ -47,4 +47,11 @@ class Song
    return_array
   end
 
+  def genre_count
+    self.@@genres.count
+  end
+
+  def artist_count
+    self.@@artists.count
+  end
 end
