@@ -52,19 +52,19 @@ class Song
     @@genres.each do |element|
       if return_hash.include?(element)
         return_hash[element] += 1
-      else 
+      else
         return_hash[element] = 1
       end
     end
     return_hash
   end
-  
+
   def self.artist_count
     return_hash = {}
     @@artists.each do |element|
       if return_hash.include?(element)
         return_hash[element] += 1
-      else 
+      else
         return_hash[element] = 1
       end
     end
