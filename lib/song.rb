@@ -27,4 +27,24 @@ class Song
    end
    return_array
   end
+
+  def self.artists
+   return_array = []
+   @@artists.each do |e|
+     if !(return_array.include?(e))
+       return_array << e
+     end
+   end
+   return_array
+  end
+  def self.names
+   return_array = []
+   @@names.each do |e|
+     if !(return_array.include?(e))
+       return_array << e
+     end
+   end
+   return_array
+  end
+
 end
